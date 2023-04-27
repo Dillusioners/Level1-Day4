@@ -15,8 +15,8 @@ def generate(url):
         
 def main():
     url = 'https://would-you-rather-api.abaanshanid.repl.co/'
-    data = generate(url)
     while True:
+        data = generate(url)
         print('Would you rather: ')
         print(data[17:].title())
         choice = input('\nChoose 1 for first option, 2 for second, 0 to exit: ')
